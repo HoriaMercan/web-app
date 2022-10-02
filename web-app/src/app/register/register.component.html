@@ -1,1 +1,25 @@
-<p>register works!</p>
+<h1 class = "center center_text">Register here!</h1>
+<div class = "center border_purple3">
+        <div class = "center border_gray1">
+            <label for = "username">Username</label>
+            <input  id = "username" type = "text"  autofocus autocomplete = "off" [(ngModel)]="username">    
+        </div>
+        <div class = "center border_gray1">
+            <label for = "password" >Password</label>    
+            <input id = "password" type = "password" autocomplete="off" [(ngModel)]="password">
+        </div>
+        <div class = "center border_gray1">
+            <label for="firstName">Firstname</label>
+            <input id = "firstName" type = "text" autocomplete="off" [(ngModel)]="firstName"> 
+        </div>
+        <div class = "center border_gray1">
+            <label for = "lastName">Lastname</label>
+            <input id = "lastName" type = "text" autocomplete="off" [(ngModel)]="lastName"> 
+        </div>
+        <div class = "center border_gray1">
+            <label for = "dateOfBirth">Birthdate</label>
+            <input id = "dateOfBirth" type = "text" autocomplete="off" [(ngModel)]="dateOfBirth"> 
+        </div>
+        <input type = "submit" (click) = "RegisterUser()">
+    {{username}}
+</div>
